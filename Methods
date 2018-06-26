@@ -1,0 +1,12 @@
+def about_me
+  puts "My name is Grace"
+  puts "I grew up in Wisconsin"
+  puts "I'm 26 Years Old"
+  puts "My favorite food is Korean and Japanese"
+  end
+  
+  about_me
+#> My Name is Grace
+#> I grew up in Wisconsin
+#> I'm 26 Years Old
+#> My favorite food is Korean and Japanese
