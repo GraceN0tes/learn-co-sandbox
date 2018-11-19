@@ -1,6 +1,6 @@
 
 
-      i = 99
+i = 99
 
       while i <= 99 and i > 2 do
 

@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>KwkSinatraStarter</title>
-</head>
+require 'bundler'
+Bundler.require
+require_relative 'models/model.rb'
+require_relative 'models/answers.rb'
 
-<body>
-  <h1>Welcome to Sinatra!</h1>
-  <p>The time is now <%= Time.now.strftime('%c') %></p>
+class ApplicationController < Sinatra::Base
 
-  <footer>
-    Here's a random number just for you <%= rand(1..100) %>
-  </footer>
-</body>
+  get '/' do
+    erb :index
+  end
 
-</html>
+  post '/mainpage' do
+    @name = params[:name]
+    erb :mainpage
+  end
